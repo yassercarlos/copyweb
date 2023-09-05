@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Carlos Yasser</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">                
+                <div class="imagen-original">
+                    <img src="img/rayos.jpg" alt="">
+                </div>
+                <div class="imagen-superpuesta">
+                    <img src="img/face.jpg" alt="" onclick="reproducirSonido()">                    
+                    <audio id="sonido-tormenta" src="sound/tormenta.mp3"></audio>
+                </div>                
+            </div>                    
+            
+            <h1>CARLOS Fdz</h1>
+            <h2>Técnico Informático-Programador Junior</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/yassercarlos" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Carlos Yasser.</span> Mi nombre es Carlos Yasser y estoy encantado
+                 de darles la bienvenida a mi portafolio web. Recientemente he completado un curso
+                  de un año en programación web, donde he adquirido conocimientos sólidos y 
+                  habilidades en diferentes tecnologías y lenguajes de programación. A través de 
+                  esta página, quiero compartir con ustedes mi pasión por el desarrollo web y 
+                  mostrarles los proyectos en los que he trabajado. Estoy emocionado por compartir 
+                  mi trayectoria en el desarrollo web y espero que encuentren inspiración en mis 
+                  proyectos. No duden en contactarme si desean más información o colaborar en 
+                  futuros proyectos. ¡Disfruten explorando mi portafolio!
+
+                  Bienvenidos,.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-03-1977
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            638000000
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            carlosyasser@example.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.carlosyasser.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Vallcarca, CP:08023. Barcelona
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span onclick="document.getElementById('sonido-lloro').play()">
+                              Desempleado
+                              <audio id="sonido-lloro" src="sound/man-crying.mp3"></audio>
+                            </span>
+                          </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                           <i class="fa-solid fa-tree" aria-hidden="true"></i>
+                            <span>
+                                Botánica                                
+                            </span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span>Piscología</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="botonDescargar" onclick="document.getElementById('sound').play()">
+                <a href="img/CurriculumInf.pdf" download="CurriculumInf.pdf" target="_blank" class="enlace-descarga">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                </a>               
+                <span class="overlay" >
+                    <audio id="sound" src="sound/applause.mp3"></audio>
+                </span>
+               
+            </button>
+            
+              
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BootStrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>49%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Curso de Python</h4>
+                        <span class="casa">CEPIBASE, Barcelona</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>UN curso de 350 horas en las que se incluyen estudios de HTML5, CSS, BootStrap, Javascript,
+                            SQL y Python. En este mismo período hice un curso de Low_Code con Mendix de 300horas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">Politénico, Habana</span>
+                        <span class="fecha">2000 - 2003</span>
+                        <p>Fueron tres años adquiriendo los conocimientos 
+                            necesarios para graduarme como Técnico medio en informática. Durante este periodo, me formé en 
+                            diversas áreas, como REDES, para la creación de sistemas de redes LAN, la administración de 
+                            servidores y el manejo de software y hardware. También obtuve habilidades en el mantenimiento de estos 
+                            sistemas, así como conocimientos básicos en seguridad informática. Además, adquirí experiencia 
+                            en programación en lenguajes como Visual Basic y Pascal.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés</h4>
+                        <span class="casa">Curso Ingles</span>
+                        <span class="fecha">2001 - 2003</span>
+                        <p>Realicé un curso intensivo de inglés durante dos años, el cual combiné con mis estudios como 
+                            Técnico Informático. Durante este curso, conté con el asesoramiento de varias empresas 
+                            comerciales del país, lo que me permitió mejorar mi nivel de inglés y adquirir habilidades 
+                            comunicativas en el idioma.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing en Telecomunicaciones y electrónica</h4>
+                        <span class="casa">CUJAE, Universidad de La Habana</span>
+                        <span class="fecha">2006 - 2008</span>
+                        <p>Comencé la carrera de Ingeniería en Telecomunicaciones y Electrónica con entusiasmo. Sin 
+                            embargo, debido a circunstancias personales, tuve que interrumpir mis estudios a mitad del 
+                            segundo año. Aunque no pude completar la carrera, la experiencia me brindó una base sólida 
+                            de conocimientos en el campo de las telecomunicaciones y la electrónica, que sigo utilizando 
+                            en mi desarrollo profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Operario Pick-Stow</h4>
+                        <span class="casa">Amazon</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Típico empleo de operario en fábricas, en este caso Pick and Stow.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>OSONA 1959, UNIPERSONAL</h4>
+                        <span class="casa">EOUCH</span>
+                        <span class="fecha">2008 - 2019</span>
+                        <p>En hostelería ejercía de Entrenador, siendo mi función enseñar y evaluar a todo nuevo empleado;
+                             principalmente en el funcionamiento del restaurante, trato con el cliente, trabajo en caja, 
+                             en cocina, el mantenimiento de equipos, seguridad laboral, mostrarles cómo ser constantes, 
+                             dinámicos y el trabajo en equipo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">CENIC(centro de investigacion)</span>
+                        <span class="fecha">2003 - 2004</span>
+                        <p>En mi primer trabajo como Informático, me dediqué principalmente a la reparación de 
+                            ordenadores y a la atención a usuarios para solucionar incidencias en la oficina. También 
+                            tuve la responsabilidad de realizar el mantenimiento de todos los equipos y de crear nuevas 
+                            redes LAN.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">EOUCH</span>
+                        <span class="fecha">2004 - 2006</span>
+                        <p>En mis dos empleos como Informático, desempeñé diversas funciones relacionadas con 
+                            el mantenimiento, reparación, seguridad y control de ordenadores. Además, tuve la 
+                            responsabilidad de operar servidores de correo electrónico y utilizar herramientas 
+                            informáticas como Photoshop para crear publicidad. También participé en la asistencia, 
+                            preparación y evaluación de nuevos empleados, asumiendo el rol de jefe de departamento y 
+                            supervisor de un equipo de más de 20 técnicos informáticos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">Periódico internacional, Prensa Latina</span>
+                        <span class="fecha">2006 - 2008</span>
+                        <p>En mis dos empleos como Informático, desempeñé diversas funciones relacionadas con 
+                            el mantenimiento, reparación, seguridad y control de ordenadores. Además, tuve la 
+                            responsabilidad de operar servidores de correo electrónico y utilizar herramientas 
+                            informáticas como Photoshop para crear publicidad. También participé en la asistencia, 
+                            preparación y evaluación de nuevos empleados, asumiendo el rol de jefe de departamento y 
+                            supervisor de un equipo de más de 20 técnicos informáticos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">                    
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <a href="https://yassercarlos.github.io/FirstWebProyect/" target="_blank">
+                            <h3>Página Web</h3>
+                        </a>                        
+                        <p>...first steps</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Low_Code</h3>
+                        <p>App para tienda padel</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <a href="https://github.com/yassercarlos/calculadora.git" target="_blank">
+                            <p>Calculadora</p>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>En Busqueda....</h3>
+                        <p>y captura....</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <p>Grabar conversaciones telefónicas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <p>Game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/yassercarlos@mailfence.com" method="POST">
+                        <input type="text" placeholder="Tú Nombre" name="nombre">
+                        <input type="text" placeholder="Número telefónico" name="telefono">
+                        <input type="text" placeholder="Dirección de correo" name="direccion">
+                        <input type="text" placeholder="Tema" name="tema">
+                        <textarea id="textarea" cols="30" rows="10" placeholder="Mensaje" name="textarea"></textarea>
+                        <button type="submit" value="enviar">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        </form>          
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div clas s="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Vallcarca, 08023, Barcelona
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 638 - 0000000
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: yassercarlos@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/yassercarlos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
